@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-shop';
+  @ViewChild('mainContent') mainContent: any;
+  @ViewChild('mainFooter') mainFooter: any;
+  ngAfterViewInit() {
+    this.mainContent.nativeElement.style.setProperty(
+      'min-height',
+      `${100 + 34 - this.mainFooter.nativeElement.offsetHeight}vh`
+    );
+  }
 }

@@ -9,7 +9,7 @@ import { LayoutsModule } from './layouts/layouts.module';
 import { PagesModule } from './pages/pages.module';
 
 @NgModule({
-  declarations: [AppComponent, routingComponent],
+  declarations: [AppComponent],
   imports: [
     LayoutsModule,
     PagesModule,
@@ -21,4 +21,4 @@ import { PagesModule } from './pages/pages.module';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

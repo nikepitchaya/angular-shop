@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 2px 10px 2px 10px;
+    box-shadow: 0px 2px 6px rgb(0, 0, 0);
+
+    .logo-container {
+        width: fit-content;
+        display: flex;
+        cursor: pointer;
+
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .menus-container {
+        width: fit-content;
+        display: flex;
+
+        p {
+            font-size: 20px;
+            margin-left: 12px;
+        }
+
+        p:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            scale: 1.1;
+        }
+    }
+
+    .option-container {
+        width: fit-content;
+        ;
+        display: flex;
+
+        p {
+            font-size: 20px;
+            margin-left: 12px;
+        }
+    }
+}
