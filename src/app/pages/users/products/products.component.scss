@@ -1,17 +1,27 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
+.container {
     padding: 20px;
-    .topmenus-container{
+    p {
+        font-size: 42px;
+        padding: 0px 32px 0px 32px;
+    }
+
+    .topmenus-container {
+        width: 100%;
         margin-bottom: 10px;
     }
-    .products-container{
+
+    .products-container {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        .sidemenus-container{
+
+        .sidemenus-container {
+            width: 25%;
             margin-right: 2px;
         }
-        .gridproducts-container{
+
+        .gridproducts-container {
+            width: 75%;
             margin-left: 2px;
         }
     }

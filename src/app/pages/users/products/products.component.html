@@ -1,6 +1,7 @@
-<div class="main-container">
+<div class="container">
+   
     <div class="topmenus-container">
-        <app-topmenus></app-topmenus>
+        <app-topmenus (filterProduct)="filterProduct($event)"></app-topmenus>
     </div>
     <div class="products-container">
         <div class="sidemenus-container">

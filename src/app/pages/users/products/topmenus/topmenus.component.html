@@ -1,1 +1,17 @@
-<p>topmenus works!</p>
+<div class="container">
+    <div class="query-bar">
+        <div class="input-productname">
+            <p>Product name</p>
+            <input type="text" [(ngModel)]="name" placeholder="Search product...">
+        </div>
+        <div class="select-order">
+            <p>Order</p>
+            <select [(ngModel)]="order">
+                <option *ngFor="let item of list" [value]="item">{{item}}</option>
+            </select>
+        </div> 
+    </div>
+    <div class="filter-button">
+        <button (click)="setProduct()">Filter</button>
+    </div>
+</div>

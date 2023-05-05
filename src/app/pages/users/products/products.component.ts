@@ -13,4 +13,7 @@ export class ProductsComponent {
   ngOnInit() {
     // console.log(this.route.queryParams.name)
   }
+  filterProduct(value: object): void {
+    console.log(value)
+  } 
 }

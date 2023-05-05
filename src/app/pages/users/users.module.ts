@@ -6,6 +6,7 @@ import { IconsModule } from 'src/app/icons/icons.module';
 import { TopmenusComponent } from './products/topmenus/topmenus.component';
 import { SidemenusComponent } from './products/sidemenus/sidemenus.component';
 import { GridproductsComponent } from './products/gridproducts/gridproducts.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { GridproductsComponent } from './products/gridproducts/gridproducts.comp
     SidemenusComponent,
     GridproductsComponent
   ],
-  imports: [CommonModule, IconsModule],
+  imports: [CommonModule, IconsModule , FormsModule],
   exports: [CommonModule],
 })
 export class UsersModule { }
