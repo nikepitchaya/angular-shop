@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
+  constructor(public router: Router) {
 
+  }
 }

@@ -9,27 +9,27 @@
     </div>
     <div class="menus-container">
         <div class="menus-item">
-            <div>
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'clothes' }})">
                 <p>Shirt & Clothes</p>
-                <app-shirt></app-shirt>
+                <app-shirt width="100"></app-shirt>
             </div>
         </div>
         <div class="menus-item">
-            <div>
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'trousers' }})">
                 <p>Trousers</p>
-                <app-trousers></app-trousers>
+                <app-trousers width="100" ></app-trousers>
             </div>
         </div>
         <div class="menus-item">
-            <div>
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'shoes' }})">
                 <p>Sneaker & Flip Flops</p>
-                <app-shoes></app-shoes>
+                <app-shoes width="100"></app-shoes>
             </div>
         </div>
         <div class="menus-item">
-            <div>
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'gadget' }})">
                 <p>Accessory</p>
-                <app-accessory></app-accessory>
+                <app-accessory width="100"></app-accessory>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  
+  constructor(public route: ActivatedRoute, public router: Router) {
+
+  }
+  ngOnInit() {
+    // console.log(this.route.queryParams.name)
+  }
 }

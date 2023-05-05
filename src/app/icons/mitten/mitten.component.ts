@@ -1,11 +1,11 @@
 import { Component, Input, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-accessory',
-  templateUrl: './accessory.component.html',
-  styleUrls: ['./accessory.component.scss']
+  selector: 'app-mitten',
+  templateUrl: './mitten.component.html',
+  styleUrls: ['./mitten.component.scss']
 })
-export class AccessoryComponent {
+export class MittenComponent {
   @Input() width: string = "32"
   @Input() height: string = ""
   @Input() fill: string = "#000"

@@ -1,0 +1,18 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    .topmenus-container{
+        margin-bottom: 10px;
+    }
+    .products-container{
+        display: flex;
+        flex-direction: row;
+        .sidemenus-container{
+            margin-right: 2px;
+        }
+        .gridproducts-container{
+            margin-left: 2px;
+        }
+    }
+}
