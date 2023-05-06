@@ -17,7 +17,7 @@
         <div class="menus-item">
             <div (click)="router.navigate(['/products'], { queryParams: { name: 'trousers' }})">
                 <p>Trousers</p>
-                <app-trousers width="100" ></app-trousers>
+                <app-trousers width="100"></app-trousers>
             </div>
         </div>
         <div class="menus-item">
@@ -27,10 +27,23 @@
             </div>
         </div>
         <div class="menus-item">
-            <div (click)="router.navigate(['/products'], { queryParams: { name: 'gadget' }})">
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'dress' }})">
+                <p>Dress</p>
+                <app-accessory width="100"></app-accessory>
+            </div>
+        </div>
+        <div class="menus-item">
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'backpack' }})">
+                <p>Backpack</p>
+                <app-accessory width="100"></app-accessory>
+            </div>
+        </div>
+        <div class="menus-item">
+            <div (click)="router.navigate(['/products'], { queryParams: { name: 'accessary' }})">
                 <p>Accessory</p>
                 <app-accessory width="100"></app-accessory>
             </div>
         </div>
     </div>
+    <h2>Made from "Angular" first component "app.component.ts"</h2>
 </div>

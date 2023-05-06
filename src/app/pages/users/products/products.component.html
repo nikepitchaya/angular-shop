@@ -1,13 +1,16 @@
 <div class="container">
-   
+
     <div class="topmenus-container">
         <app-topmenus (filterProduct)="filterProduct($event)"></app-topmenus>
     </div>
     <div class="products-container">
         <div class="sidemenus-container">
-            <app-sidemenus></app-sidemenus>
+            <p>Category</p>
+            <app-sidemenus [category_name]="category_name"></app-sidemenus>
         </div>
         <div class="gridproducts-container">
+            <p>{{category_name ? category_name.split("")[0].toUpperCase()+""+category_name.slice(1,category_name.length)
+                : "All Product"}}</p>
             <app-gridproducts></app-gridproducts>
         </div>
     </div>

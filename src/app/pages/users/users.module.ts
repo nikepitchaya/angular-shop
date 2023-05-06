@@ -7,6 +7,8 @@ import { TopmenusComponent } from './products/topmenus/topmenus.component';
 import { SidemenusComponent } from './products/sidemenus/sidemenus.component';
 import { GridproductsComponent } from './products/gridproducts/gridproducts.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FormsModule } from '@angular/forms';
     ProductsComponent,
     TopmenusComponent,
     SidemenusComponent,
-    GridproductsComponent
+    GridproductsComponent,
+    AboutComponent,
+    BlogComponent
   ],
   imports: [CommonModule, IconsModule , FormsModule],
   exports: [CommonModule],

@@ -24,9 +24,9 @@
     }
 
     .menus-container {
-        width: 40%;
+        width: 60%;
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto auto;
         grid-gap: 10px;
         padding: 4px;
         .menus-item {

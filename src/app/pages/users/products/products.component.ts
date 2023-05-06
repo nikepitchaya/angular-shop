@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -6,14 +6,18 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit {
+  category_name: string = ""
   constructor(public route: ActivatedRoute, public router: Router) {
-
   }
   ngOnInit() {
-    // console.log(this.route.queryParams.name)
+    this.route.queryParams
+      .subscribe(params => {
+        this.category_name = params['name'];
+      }
+      );
   }
   filterProduct(value: object): void {
     console.log(value)
-  } 
+  }
 }

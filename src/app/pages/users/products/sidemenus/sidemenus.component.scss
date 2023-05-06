@@ -1,0 +1,17 @@
+.container {
+
+    border: 1px solid #000;
+
+    div {
+        padding: 8px;
+
+        p:hover {
+            text-decoration: underline;
+        }
+    }
+
+    div:hover {
+        cursor: pointer;
+        background: rgb(210, 210, 210);
+    }
+}

@@ -1,1 +1,26 @@
-<p>sidemenus works!</p>
+<div class="container">
+    <div [style.background]="category_name == 'clothes' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'clothes'}})">
+        <p>Clothes</p>
+    </div>
+    <div [style.background]="category_name == 'trousers' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'trousers'}})">
+        <p>Trousers</p>
+    </div>
+    <div [style.background]="category_name == 'shoes' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'shoes'}})">
+        <p>Sneaker</p>
+    </div>
+    <div [style.background]="category_name == 'dress' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'dress'}})">
+        <p>Dress</p>
+    </div>
+    <div [style.background]="category_name == 'backpack' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'backpack'}})">
+        <p>Backpack</p>
+    </div>
+    <div [style.background]="category_name == 'accessary' ? 'rgb(210, 210, 210)' : 'none'"
+        (click)="router.navigate(['/products'],{queryParams:{name:'accessary'}})">
+        <p>Accessary</p>
+    </div>
+</div>

@@ -5,13 +5,13 @@
     </div>
     <div class="menus-container">
         <p (click)="router.navigate(['/products'])">Products</p>
-        <p (click)="router.navigate(['/products'])">About</p>
-        <p>#</p>
+        <p (click)="router.navigate(['/about'])">About us</p>
+        <p (click)="router.navigate(['/blog'])">Blog</p>
         <p>#</p>
     </div>
     <div class="option-container">
-        <p>Favicons</p>
-        <p>Cart</p>
-        <p>i</p>
+        <app-cart></app-cart>
+        <app-heart></app-heart>
+        <app-information></app-information>
     </div>
 </div>

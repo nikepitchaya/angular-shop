@@ -1,1 +1,12 @@
-<p>gridproducts works!</p>
+<div class="grid-container">
+    <div *ngFor="let item of productList;let i = index" class="grid-item">
+        <div class="img-container">
+            <app-heart width="24"></app-heart>
+            <img src={{item.img}} alt="product-image">
+            <p>{{item.price}} ฿</p>
+        </div>
+        <div class="name-container">
+            <p>{{item.name}}</p>
+        </div>
+    </div>
+</div>
