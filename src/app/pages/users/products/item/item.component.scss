@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 40px 80px;
+
+    .name-container {
+        margin-bottom: 40px;
+    }
+
+    .product-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .img-container {
+            width: 50%;
+        }
+
+        .descript-container {
+            width: 50%;
+
+            .descript-head {
+                margin-bottom: 10px;
+
+                p {
+                    font-size: 32px;
+                }
+            }
+
+            .descript-detail {
+                margin-bottom: 10px;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .descript-button {
+                display: flex;
+                flex-direction: row;
+
+                button {
+                    padding: 10px;
+                    margin-right: 10px;
+                }
+
+                div {}
+            }
+        }
+    }
+
+}

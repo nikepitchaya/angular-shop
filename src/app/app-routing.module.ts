@@ -4,12 +4,14 @@ import { LandingComponent } from './pages/users/landing/landing.component';
 import { ProductsComponent } from './pages/users/products/products.component';
 import { AboutComponent } from './pages/users/about/about.component';
 import { BlogComponent } from './pages/users/blog/blog.component';
+import { ItemComponent } from './pages/users/products/item/item.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent }
+  { path: 'blog', component: BlogComponent },
+  { path: 'products/item', component: ItemComponent },
 ];
 
 @NgModule({

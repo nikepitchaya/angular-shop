@@ -9,6 +9,7 @@ import { GridproductsComponent } from './products/gridproducts/gridproducts.comp
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { ItemComponent } from './products/item/item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BlogComponent } from './blog/blog.component';
     SidemenusComponent,
     GridproductsComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    ItemComponent
   ],
   imports: [CommonModule, IconsModule , FormsModule],
   exports: [CommonModule],

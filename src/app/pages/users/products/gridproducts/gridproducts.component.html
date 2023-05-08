@@ -1,5 +1,5 @@
 <div class="grid-container">
-    <div *ngFor="let item of productList;let i = index" class="grid-item">
+    <div *ngFor="let item of productList;let i = index" class="grid-item" (click)="router.navigate(['/products/item'])">
         <div class="img-container">
             <app-heart width="24"></app-heart>
             <img src={{item.img}} alt="product-image">
